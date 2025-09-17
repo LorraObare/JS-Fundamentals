@@ -7,15 +7,12 @@ You are not allowed to use var
 You can use only two console.log
 You must use a loop (while, for, etc.)*/
 
-const arg = process.argv[2]; // the first argument after "node script.js"
-const num = parseInt(arg, 10); // convert the argument to an integer
-if (isNaN(num)) {
-    console.log("Missing number of occurrences");
-}   
-else {
-    let output = "";
-    for (let i = 0; i < num; i++) {
-        output += "C is fun\n";
-    }   
-    console.log(output.trim());
+const x = Number(process.argv[2]);
+
+if (isNaN(x)) {
+  console.log("Missing number of occurrences");
+} else {
+  for (let i = 0; i < x; i++) {
+    console.log("C is fun");
+  }
 }
