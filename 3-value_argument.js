@@ -5,10 +5,10 @@ You must use console.log(...) to print all output
 You are not allowed to use var
 You are not allowed to use length*/
 
-const args = process.argv.slice(2);
-if (args.length === 0) {
-    console.log("No argument");
-}
-else {
-    console.log(args[0]);
+const arg = process.argv[2];   // the first argument after "node script.js"
+
+if (arg === undefined) {
+  console.log("No argument");
+} else {
+  console.log(arg);
 }
