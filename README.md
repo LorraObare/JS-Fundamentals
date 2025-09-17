@@ -1,0 +1,1 @@
+This is a simple JavaScript repository showcasing the Introduction to JavaScript language and it's fundamental properties.
